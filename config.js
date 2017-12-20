@@ -3,7 +3,6 @@
 const { readFile: readFileNode } = require('fs')
 const { resolve } = require('path')
 
-const compareFunc = require('compare-func')
 const pify = require('pify')
 
 const readFile = pify(readFileNode)
@@ -102,8 +101,7 @@ const writerOpts = {
   groupBy: 'type',
   commitGroupsSort: 'title',
   commitsSort: ['scope', 'subject'],
-  noteGroupsSort: 'title',
-  notesSort: compareFunc
+  noteGroupsSort: 'title'
 }
 
 module.exports = Promise.all([
