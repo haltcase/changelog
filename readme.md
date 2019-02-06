@@ -69,7 +69,7 @@ changelog -i CHANGES.MD -o RELEASE_HISTORY.md
 
 ```markdown
 <a name="2.0.0"></a>
-### [`2.0.0`](https://github.com/citycide/changelog/compare/v1.4.2...v2.0.0) (2017-12-12)
+## [`2.0.0`](https://github.com/citycide/changelog/compare/v1.4.2...v2.0.0) (2017-12-12)
 
 
 ###### BUG FIXES
@@ -94,7 +94,7 @@ changelog -i CHANGES.MD -o RELEASE_HISTORY.md
 Which displays as:
 
 <a name="2.0.0"></a>
-### [`2.0.0`](https://github.com/citycide/changelog/compare/v1.4.2...v2.0.0) (2017-12-12)
+## [`2.0.0`](https://github.com/citycide/changelog/compare/v1.4.2...v2.0.0) (2017-12-12)
 
 
 ###### BUG FIXES
