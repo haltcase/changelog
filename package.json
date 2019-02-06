@@ -3,15 +3,8 @@
   "version": "1.0.0",
   "description": "Generate a changelog from git metadata using a tweaked Angular convention.",
   "license": "MIT",
-  "author": {
-    "name": "Bo Lingen",
-    "email": "lingenbw@gmail.com",
-    "url": "https://github.com/citycide"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/citycide/changelog.git"
-  },
+  "author": "Bo Lingen <lingenbw@gmail.com> (https://github.com/citycide)",
+  "repository": "https://github.com/citycide/changelog.git",
   "homepage": "https://github.com/citycide/changelog",
   "bugs": "https://github.com/citycide/changelog/issues",
   "engines": {
