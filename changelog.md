@@ -1,4 +1,19 @@
-<a name="1.1.0"></a>
+## `2.0.0` (2019-12-29)
+
+
+###### FEATURES
+
+* remove anchor from header ([5834458](https://github.com/citycide/changelog/commit/5834458))
+* **package:** require node 10 ([1874b40](https://github.com/citycide/changelog/commit/1874b40))
+
+
+###### BREAKING CHANGES
+
+* HTML anchor elements are no longer included.
+* **package:** Node versions < 10 are no longer supported.
+
+---
+
 ## `1.1.0` (2019-02-06)
 
 
@@ -10,7 +25,6 @@
 
 ---
 
-<a name="1.0.0"></a>
 ### `1.0.0` (2017-12-12)
 
 Initial release
