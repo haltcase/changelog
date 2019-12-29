@@ -1,4 +1,4 @@
-# @citycide/changelog &middot; [![Version](https://img.shields.io/npm/v/@citycide/changelog.svg?style=flat-square&maxAge=3600)](https://www.npmjs.com/package/@citycide/changelog) [![License](https://img.shields.io/npm/l/@citycide/changelog.svg?style=flat-square&maxAge=3600)](https://www.npmjs.com/package/@citycide/changelog) [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square&maxAge=3600)](https://standardjs.com)
+# @citycide/changelog &middot; [![Version](https://flat.badgen.net/npm/v/@citycide/changelog)](https://www.npmjs.com/package/@citycide/changelog) [![License](https://flat.badgen.net/npm/license/@citycide/changelog)](https://www.npmjs.com/package/@citycide/changelog) [![JavaScript Standard Style](https://flat.badgen.net/badge/code%20style/standard/green)](https://standardjs.com)
 
 > standard-changelog customized with a few personal tweaks.
 
@@ -8,7 +8,7 @@ has been updated.
 
 ## installation
 
-```shell
+```sh
 npm i @citycide/changelog
 ```
 
@@ -34,7 +34,7 @@ Once you have a file started, you just need to follow these steps:
 3. run `changelog` to add the latest version's changes
 4. create a GitHub release / tag for the latest update
 
-```shell
+```sh
 changelog
 
 # for other filenames
@@ -46,23 +46,23 @@ changelog -i CHANGES.MD -o RELEASE_HISTORY.md
 
 ## usage
 
-```shell
-  Usage:
+```
+Usage:
 
-    changelog [options]
+  changelog [options]
 
-  Options:
-    -i, --in-file          Read the changelog from this file (default: changelog.md)
-    -f, --first-release    Generate the changelog for the first time
-    -o, --out-file         Write the changelog to this file (default: changelog.md)
-    -s, --same-file        Overwrite the input file (default: true)
-    -k, --pkg              Path to a specific package.json (default: nearest package.json)
-    -a, --append           Whether the generated block should be appended
-    -r, --release-count    Number of releases to be generated from the latest
-    -v, --verbose          Whether to output more logs
-    -c, --context          Path to a JSON file that is used to define template variables
-    -l, --lerna-package    Generate a changelog for a specific lerna package (:pkg-name@1.0.0)
-    --commit-path          Generate a changelog scoped to a specific directory
+Options:
+  -i, --in-file          Read the changelog from this file (default: changelog.md)
+  -f, --first-release    Generate the changelog for the first time
+  -o, --out-file         Write the changelog to this file (default: changelog.md)
+  -s, --same-file        Overwrite the input file (default: true)
+  -k, --pkg              Path to a specific package.json (default: nearest package.json)
+  -a, --append           Whether the generated block should be appended
+  -r, --release-count    Number of releases to be generated from the latest
+  -v, --verbose          Whether to output more logs
+  -c, --context          Path to a JSON file that is used to define template variables
+  -l, --lerna-package    Generate a changelog for a specific lerna package (:pkg-name@1.0.0)
+  --commit-path          Generate a changelog scoped to a specific directory
 ```
 
 ## output example
