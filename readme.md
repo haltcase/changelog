@@ -68,7 +68,6 @@ Options:
 ## output example
 
 ```markdown
-<a name="2.0.0"></a>
 ## [`2.0.0`](https://github.com/citycide/changelog/compare/v1.4.2...v2.0.0) (2017-12-12)
 
 
@@ -93,7 +92,6 @@ Options:
 
 Which displays as:
 
-<a name="2.0.0"></a>
 ## [`2.0.0`](https://github.com/citycide/changelog/compare/v1.4.2...v2.0.0) (2017-12-12)
 
 
