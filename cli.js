@@ -36,24 +36,22 @@ const help = chalk`
     \n
 `
 
-const { flags } = meow({ description: false, help }, {
-  alias: {
-    a: 'append',
-    c: 'context',
-    f: 'first-release',
-    h: 'help',
-    i: 'in-file',
-    k: 'pkg',
-    l: 'lerna-package',
-    o: 'out-file',
-    r: 'release-count',
-    s: 'same-file',
-    V: 'verbose',
-    v: 'version'
-  },
-  default: {
-    i: 'changelog.md',
-    s: true
+const { flags } = meow({
+  description: false,
+  help,
+  flags: {
+    append: { type: 'boolean', alias: 'a' },
+    context: { type: 'string', alias: 'c' },
+    firstRelease: { type: 'boolean', alias: 'f' },
+    help: { type: 'boolean', alias: 'h' },
+    inFile: { type: 'string', alias: 'i', default: 'changelog.md' },
+    pkg: { type: 'string', alias: 'k' },
+    lernaPackage: { type: 'string', alias: 'l' },
+    outFile: { type: 'string', alias: 'o' },
+    releaseCount: { type: 'number', alias: 'r' },
+    sameFile: { type: 'boolean', alias: 's', default: true },
+    verbose: { type: 'boolean', alias: 'V' },
+    version: { type: 'boolean', alias: 'v' }
   }
 })
 
