@@ -38,8 +38,8 @@ const labels = {
   ci: 'CI'
 }
 
-const showLabels = ['feat', 'fix', 'perf', 'revert']
-const hideLabels = ['docs', 'style', 'refactor', 'test', 'chore', 'ci']
+const showLabels = new Set(['feat', 'fix', 'perf', 'revert'])
+const hideLabels = new Set(['docs', 'style', 'refactor', 'test', 'chore', 'ci'])
 
 const writerOpts = {
   transform (commit, context) {
@@ -50,11 +50,11 @@ const writerOpts = {
       discard = false
     })
 
-    if (showLabels.indexOf(commit.type) !== -1) {
+    if (showLabels.has(commit.type)) {
       commit.type = labels[commit.type]
     } else if (discard) {
       return
-    } else if (hideLabels.indexOf(commit.type) !== -1) {
+    } else if (hideLabels.has(commit.type)) {
       commit.type = labels[commit.type]
     }
 
@@ -92,7 +92,7 @@ const writerOpts = {
 
     // remove references that already appear in the subject
     commit.references = commit.references.filter(
-      reference => issues.indexOf(reference.issue) === -1
+      reference => issues.includes(reference.issue)
     )
 
     return commit
