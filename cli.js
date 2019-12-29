@@ -103,7 +103,7 @@ if (context) {
 const commitPath = flags.commitPath ? { path: flags.commitPath } : {}
 const changelogStream = generate(options, templateContext, commitPath)
   .on('error', e => {
-    if (e.message.indexOf('ambiguous argument \'HEAD\'') > 0) {
+    if (e.message.includes('ambiguous argument \'HEAD\'')) {
       fail('Could not fetch commits. Is this a new repository?')
     }
 
